@@ -14,4 +14,11 @@ services:
     - .:/pgadmin4
     ports:
     - "4033:4033"
+  postgress:
+    build:
+      context: ./postgress
+    volumes:
+    - .:/postgress
+    ports:
+    - "4050:4050"
 
